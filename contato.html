@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae MarcosJHHernandez</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Início do header -->
+    <header>
+
+        <!-- Início do menu site -->
+        <nav class="navegacao">
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html">Resumo</a></li>
+                <li><a href="index.html">Experiência</a></li>
+                <li><a href="index.html">Educação</a></li>
+                <li><a href="index.html">Competências</a></li>
+                <li><a href="index.html">Habilidades</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Fim do menu site -->
+        </section>
+    </header>
+    <!-- Fim do header -->
+
+    <!-- Início do main -->
+    <main>
+        <!-- Início da section  do conteúdo do site -->
+        <section>
+            <!-- Conteúdo de texto sobre o site -->
+            <article>
+                <h1>Formulário de Contato</h1>
+                <p>Preencha os dados abaixo e envie sua mensagem de contato.</p>
+
+                <fieldset class="formulario">
+                    <legend>
+                        <h3>Dados de Contato</h3>
+                    </legend>
+                    <form id="frmInscricao" action="contato.php" method="POST">
+
+                        <label>Nome completo:</label><br>
+                        <input type="text" required="required" id="txtNome" maxlength="100" size="50"><br><br>
+
+                        <label for="favcolor">Selecione sua cor favorita:</label>
+                        <input type="color" id="favcolor" name="favcolor" value="#46acfc"><br><br>
+
+                        <label>Data atual:</label><br>
+                        <input type=”date” required="required" id="txtDataNascimento"><br><br>
+
+                        <label>Tipo de pessoa:</label><br>
+                        <input type="radio" name="rdoSexo" value="M" required="required">
+                        <label>Pessoa</label>
+                        <input type="radio" name="rdoSexo" value="F" required="required">
+                        <label>Empresa</label><br><br>
+
+                        <label>Endereço:</label><br>
+                        <input type="text" required="required" id="txtLogradouro" maxlength="100" size="50"><br><br>
+
+                        <label>Estado:</label><br>
+                        <select id="cbxEstado" required="required">
+                            <option value="">--Seleciones--</option>
+                            <option value="1">SC</option>
+                        </select><br><br>
+
+                        <label>Cidade:</label><br>
+                        <select id="cbxCidade" required="required">
+                            <option value="">--Selecione--</option>
+                            <option value="1">Florianópolis</option>
+                            <option value="2">Joinville</option>
+                            <option value="3">Blumenau</option>
+                            <option value="4">São José</option>
+                            <option value="5">Itajaí</option>
+                            <option value="6">Palhoça</option>
+                            <option value="7">Balneário Camboriú</option>
+                        </select><br><br>
+
+                        <label>Celular:</label><br>
+                        <input type="tel" required="required" id="txtCelular" size="50" placeholder="(##) ####-####"
+                            maxlength="15">
+                        <br><br>
+
+                        <label>E-mail:</label><br>
+                        <input type="email" required="required" size="50" id="txtEmail"><br><br>
+
+                        <label>Áreas de Interesse:</label><br>
+                        <input type="checkbox" value="JavaScript" name="chkAreasInteresse">
+                        <label>JavaScript</label>
+                        <input type="checkbox" value="CSS" name="chkAreasInteresse">
+                        <label>CSS</label>
+                        <input type="checkbox" value="HTML" name="chkAreasInteresse">
+                        <label>HTML</label><br><br>
+
+                        <label for="myfile">Anexa algum arquivo:</label>
+                        <input type="file" id="myfile" name="myfile"><br><br>
+
+                        <label>Mensagem:</label><br>
+                        <textarea cols="50" rows="5" required="required"></textarea>
+                        <br><br>
+
+                        <input id="btnEnviar" type="submit" value="Enviar" />
+                    </form>
+                </fieldset>
+
+            </article>
+            <!-- Fim do conteúdo de texto sobre o site -->
+
+        </section>
+        <!-- Fim da section do conteúdo -->
+    </main>
+    <!-- Fim do main -->
+
+ <!-- Início do footer -->
+ <footer class="container-footer">
+    <div class="row-footer">
+        <div class="footer-box">
+            <h3>Sobre Mim</h3>
+            <p>Procuro oportunidades de crescimento profissional nas áreas de Administração, 
+               Desenvolvedor Web e Marketing digital. Contribuir com minha experiência e 
+               conhecimento no ambiente de trabalho, responsável, comprometido 
+               e con capacidade de assumir novos desafios.</p>
+            
+        </div>
+        <div class="block-footer">
+            <h3>Contato Comigo</h3>
+            <ul>
+                <li><a href="index.html">Curriculo</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <p class="p-2">marcosh.jimenezh@gmail.com</p>
+            <p class="p-2">+55 (48) 9915-97340</p>
+        </div>
+        
+    </div>
+ </footer>
+  <!-- Fim do footer  -->  
+
+</body>
+
+</html>
